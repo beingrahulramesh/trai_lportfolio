@@ -1,0 +1,224 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    font-family: "IBM Plex Serif", serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navabar{
+    display: flex;
+    width: 85%;/*ethe 85 cause parent div is 100% so athre namake venda nav */
+    justify-content: space-between;
+    margin-left: 90px;
+    align-items: center;
+}
+#logo{
+       width: 9%;
+       height: 9%;
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 18px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: chartreuse;
+}
+#lastname{
+    color: rgb(133, 133, 7);
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.title h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.title p{
+    margin-bottom: 25px;
+}
+.download{
+    background-color: blue;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.images{
+    width: 38%;
+    height: 85%;
+    position: absolute;
+    right: 35px;
+    bottom: 0px;
+}
+.imagegroup{
+    position: absolute;
+    height: 96%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom .9s,left .9s;
+}
+.images:hover #girl{
+    left:45%;
+}
+.images:hover #shape{
+    bottom: 60px;
+}
+#about{
+    margin: 20% 8% 0 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 35px;
+    color: chocolate;
+}
+.heading span{
+    color: green;
+    font-size: 18px;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+}
+.about-image img{
+    width: 90%;
+}
+.about-details {
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: 450;
+       
+}
+.about-details p{
+    text-align: justify;
+}
+.information{
+    margin-top: 20px;
+
+}
+.info-box{
+     margin-bottom: 20px;
+}
+.info-box span{
+    margin-left: 20px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+.skill-img img{
+    width: 88%;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem opx;
+    align-items: center;
+    position: relative;
+}
+.bar-container span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.bar-box{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -8px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 85%;
+}
+.js-bar{
+    background-color: orange;
+    width: 86%;
+}
+.react-bar{
+    background-color: orange;
+    width: 75%;
+}
+.icon-set{
+    display:flex;
+    align-items: center;
+    justify-content:center ;
+    margin-top: 2%;
+    
+}
+.icon,.up-arrow{
+    width:55px ;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to top left,aqua,yellow,orange);
+}
+.icon:hover i{
+     color: white;
+     animation: shape 1s;
+}
+footer{
+    margin: 50px 0px;
+}
+footer p{
+    text-align: center;
+    font: weight 3px; 
+}
+.up-arrow{
+    float: right;
+    
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+@keyframes shape{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    60%{
+        transform: rotate(-15deg);
+    }
+
+}
+.up-arrow:hover{
+    background-color: orange;
+}
+
+html{
+    scroll-behavior: smooth;
+}
